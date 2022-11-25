@@ -1,0 +1,120 @@
+.card {
+    height: 659px;
+    width: 499px;
+    padding: 32px 28px;
+    background-color: var(--white);
+    border-radius: var(--br-8);
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    transition: 0.1s ease-in-out;
+}
+
+figure {
+    position: relative;
+    flex-direction: column;
+}
+
+figure > span {
+    height: 32px;
+    width: 72px;
+    background-color: var(--blue-2);
+    color: var(--white);
+    border-radius: var(--br-4);
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+figure > img {
+    width: 100%;
+    background-color: var(--grey-3);
+    border-radius: var(--br-8);
+}
+
+figure > figcaption {
+    font-size: var(--fs-29);
+    margin-top: 37px;
+}
+
+.card__colors {
+    height: 28px;
+    width: max-content;
+    gap: 16px;
+}
+
+.circle__colors {
+    display: flex;
+    gap: 12px;
+}
+
+.circle__clrs {
+    height: 28px;
+    width: 28px;
+    border: 2px solid var(--grey-1);
+    border-radius: 50%;
+}
+
+.circle__clrs--grey {
+    background-color: var(--grey-1);
+}
+
+.circle__clrs--blue1 {
+    background-color: var(--blue-1);
+}
+
+.circle__clrs--blue2 {
+    background-color: var(--blue-2);
+}
+
+.card__sizes {
+    height: 28px;
+    width: max-content;
+    gap: 24px;
+}
+
+.sizes {
+    display: flex;
+    gap: 32px;
+}
+
+.box__sizes {
+    height: 100%;
+    width: 37px;
+    background-color: var(--grey-3);
+    text-align: center;
+    border-radius: var(--br-4);
+}
+
+.card__prices {
+    gap: 28px;
+}
+
+.price {
+    color: var(--grey-2);
+    text-decoration: line-through;
+}
+
+.card__btns {
+    justify-content: flex-end;
+    gap: 13px; 
+}
+
+.btns {
+    height: 47px;
+    width: 164px;
+    font-size: var(--fs-16);
+    border-radius: var(--br-8);
+    justify-content: center;
+}
+
+.btn--wht {
+    border: 2px solid var(--grey-1);
+    background-color: var(--grey-3);
+}
+
+.btn--grey {
+    background-color: var(--grey-1);
+    color: var(--white);
+}

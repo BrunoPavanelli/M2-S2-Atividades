@@ -1,0 +1,41 @@
+@media(width <= 600px) {
+    .card {
+        padding: 32px 16px;
+        height: 697px;
+        width: 332px;
+    }
+    .card__txt__20 {
+        font-size: var(--fs-16);
+    }
+    figure > span {
+        height: 27px;
+        width: 62px;
+    }   
+    figure > img {
+        width: 293px;
+        height: 293px;
+    }
+    figure > figcaption {
+        margin-top: 15px;
+        font-size: var(--fs-20);
+    }
+    .circle__colors{
+        height: 24px;            
+    }
+    .circle__clrs{
+        height: 24px; 
+        width: 24px;       
+    }
+    .card__sizes{
+        height: 25px;
+    }
+    .box__sizes {
+        width: 35px;
+    }
+    .card__btns {
+        flex-direction: column;
+    }
+    .btns {
+        width: 100%;
+    }
+}
