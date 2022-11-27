@@ -21,9 +21,22 @@ body {
     align-items: center;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.shown {
+    display: block !important;
+}
+
+.shown-flex {
+    display: flex !important; 
+}
+
 /* Header */
 header {
     height: var(--height-header);
+    width: 100%;
     border-bottom: 2px solid var(--grey-4);
     box-shadow: 0 2px 2px 0 var(--grey-4);
     display: flex;
@@ -43,6 +56,7 @@ header {
 
 .nav__list {
     gap: var(--gap-32);
+    transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) .8s;
 }
 
 .list__itens {
@@ -80,6 +94,15 @@ header {
     border: 2px solid var(--clr-brand);
 }
 
+/* Icons */
+.hamburg, .close {
+    display: none;
+    background-color: transparent;
+}
+.close {
+    padding: 24px 16px;
+}
+
 @media (615px < width <= 815px) {
     .column__left {
         gap: var(--gap-16);
@@ -110,6 +133,27 @@ header {
         gap: var(--gap-28);
         border-top: 2px solid var(--grey-4);
         box-shadow: 0 2px 2px 0 var(--grey-4);
+        display: none;
+    }
+    header {
+        position: relative;
+    }
+    .column__left {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .hamburg {
+        display: block;
+    }
+    .nav__list{
+        flex-direction: column;
+        position: absolute;
+        top: calc(var(--height-header) + (var(--gap-20)));
+        left: var(--gap-16);
+        display: none;
+    }
+    .list__itens {
+        padding: var(--gap-20) 0;
     }
     .column__right > form > input {
         width: 100%;
