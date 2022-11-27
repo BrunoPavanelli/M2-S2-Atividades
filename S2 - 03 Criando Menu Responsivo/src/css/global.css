@@ -1,0 +1,33 @@
+:root {
+    --ff: 'Roboto', sans-serif;
+
+    --clr-brand: #364FC7;
+    --grey-1: #212529;;
+    --grey-2: #868E96;   
+    --grey-3: #ADB5BD;
+    --grey-4: #E9ECEF;
+    --grey-5: #F1F3F5;
+    --grey-6: #F8F9FA;
+    --mode: white;
+
+    --fs-16: 1rem;
+    --fs-14: .875rem;
+    --fs-12: .75rem;
+
+    --fw-500: 500;
+    --fw-400: 400;
+
+    --gap-108: 6.75rem;
+    --gap-42: 2.625rem;
+    --gap-40: 2.5rem;
+    --gap-32: 2rem;
+    --gap-28: 1.75rem;
+    --gap-20: 1.25rem;
+    --gap-16: 1rem;
+    --gap-12: .75rem;
+
+    --width-ctn: 66.5rem;
+    --height-header: 5rem;
+
+    --br-8: .5rem;
+}

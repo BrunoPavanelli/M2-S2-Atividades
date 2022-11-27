@@ -1,0 +1,117 @@
+/* Geral Config */
+body {
+    background-color: var(--mode);
+    height: 100vh;
+    font-family: var(--ff);
+}
+
+/* utility classes */
+.container {
+    width: min(var(--width-ctn), 100% - (var(--gap-16) * 2));
+    margin-inline: auto;
+}
+
+.column {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+header {
+    height: var(--height-header);
+    border-bottom: 2px solid var(--grey-4);
+    box-shadow: 0 2px 2px 0 var(--grey-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column__left {
+    gap: var(--gap-42);
+}
+
+.column__left > h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--clr-brand);
+}
+
+.nav__list {
+    gap: var(--gap-32);
+}
+
+.list__itens {
+    font-size: var(--fs-16);
+    font-weight: var(--fw-500);
+    color: var(--grey-2);
+}
+
+.list__itens--grey-1 {
+    color: var(--grey-1);
+}
+
+.column__right {
+    gap: var(--gap-20);
+}
+
+.column__right > form > input {
+    height: 38px;
+    width: 231px;
+    padding: 0 var(--gap-42);
+    background-color: var(--grey-5);
+    border-radius: var(--br-8);
+    font-size: var(--fs-12);
+    font-weight: var(--fw-400);
+    color: var(--grey-3);
+    background-image: url(../../assets/img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 13px 11px;
+}
+
+.column__right > span {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 2px solid var(--clr-brand);
+}
+
+@media (615px < width <= 815px) {
+    .column__left {
+        gap: var(--gap-16);
+    }
+    .nav__list {
+        gap: var(--gap-12);
+    }
+    .column__right {
+        gap: var(--gap-12);
+    } 
+    .column__right > form > input {
+        width: 10rem;
+    } 
+    .column__right > span {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (width <= 615px) {
+    .column__right {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        padding:var(--gap-28) var(--gap-16) var(--gap-20);
+        gap: var(--gap-28);
+        border-top: 2px solid var(--grey-4);
+        box-shadow: 0 2px 2px 0 var(--grey-4);
+    }
+    .column__right > form > input {
+        width: 100%;
+    } 
+}
